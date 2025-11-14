@@ -7,6 +7,7 @@ import html from "../images/html.png";
 import js from "../images/js.png";
 import mysql from "../images/mysql.png";
 import php from "../images/php.png";
+import Footer from "../Components/Footer.jsx";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -21,9 +22,9 @@ const Home = () => {
     setImage(leiFormal);
   }
   return (
-    <div className="min-h-screen flex flex-col space-x-12">
+    <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
       <Nav />
-      <div className="flex-1 bg-gray-100 flex justify-center items-center">
+      <div className="flex-1 flex justify-center items-center">
         <img
           src={defImage}
           alt="Image"
@@ -33,7 +34,7 @@ const Home = () => {
         />
         <div className="flex flex-col justify-start pl-12 space-y-[100px]">
           <div>
-            <h1 className="text-3xl font-semibold">
+            <h1 className="text-3xl font-bold">
               Hello! I'm <br /> Matthew Peralta
             </h1>
             <p className="text-gray-600">Web developer | Software developer</p>
@@ -59,6 +60,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
