@@ -55,11 +55,6 @@ const Contact = () => {
                 desc="Baliwag City, Bulacan"
                 icon="📍"
               />
-              <ContactCard
-                title="Availability"
-                desc="Monday - Friday 9:00 AM - 5:00 PM (PHT)"
-                icon="⌚"
-              />
             </div>
 
             <form

@@ -37,7 +37,7 @@ const Home = () => {
             <h1 className="text-3xl font-bold">
               Hello! I'm <br /> Matthew Peralta
             </h1>
-            <p className="text-gray-600">Web developer | Software developer</p>
+            <p className="text-gray-600">Website developer</p>
             <div className="pt-8">
               <Link
                 to="/about"
