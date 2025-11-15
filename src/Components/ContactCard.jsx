@@ -1,7 +1,7 @@
 const ContactCard = ({ title, desc, icon }) => {
   return (
     <div
-      className="bg-gray-200 flex items-center p-4 rounded-lg w-[500px] 
+      className="bg-gray-200 flex items-center p-4 rounded-lg w-full 
     transition-all duration-300 hover:scale-[1.03] hover:shadow-lg hover:bg-gray-300"
     >
       <div className="bg-red-800 rounded-full p-2 text-lg w-[43px] text-center">
