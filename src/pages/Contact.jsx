@@ -94,7 +94,7 @@ const Contact = () => {
                 type="submit"
                 disabled={isSending}
                 className={clsx(
-                  "w-full p-3 rounded-lg font-semibold transition",
+                  "w-full p-3 rounded-lg font-semibold transition cursor-pointer",
                   isSending
                     ? "bg-red-800 opacity-70 text-white cursor-not-allowed"
                     : "bg-red-800 hover:bg-red-700 text-white"

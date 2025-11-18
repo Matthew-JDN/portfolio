@@ -1,6 +1,7 @@
 import Card from "../Components/Card.jsx";
 import Footer from "../Components/Footer.jsx";
 import SdoLogo from "../images/SdoLogo.png";
+import TribesLogo from "../images/TribesLogo.jpg";
 import Nav from "../Components/Nav";
 
 const About = () => {
@@ -33,13 +34,15 @@ const About = () => {
           <hr className="mt-12 bg-red-400 h-[2px] border-0" />
 
           <div className="mt-6 flex flex-col items-start justify-center">
-            <h1 className="text-red-800 font-medium text-lg">
-              Capstone Project
-            </h1>
-            <div className="flex">
+            <h1 className="text-red-800 font-medium text-lg">Projects</h1>
+            <div className="flex justify-between items-center space-x-6">
               <Card
                 image={SdoLogo}
-                desc={"Document Tracking for SDO Baliwag, Bulacan"}
+                desc={"Document Tracking System for SDO Baliwag, Bulacan"}
+              />
+              <Card
+                image={TribesLogo}
+                desc={"Profiling System for Aeta Remontado Dumagat "}
               />
             </div>
           </div>
