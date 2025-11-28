@@ -4,7 +4,7 @@ import email from "../images/email.png";
 
 const Footer = () => {
   return (
-    <div className="mt-12 border-1 border-red-500 bg-red-900 p-6 flex flex-col justify-center items-center">
+    <div className="mt-12 border border-red-500 bg-red-900 p-6 flex flex-col justify-center items-center">
       <div className="flex space-x-6">
         <a href="https://github.com/Matthew-JDN" target="_blank">
           <img
@@ -35,7 +35,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <hr className="mt-4 bg-gray-300 h-[2px] border-0 w-[800px] opacity-70" />
+      <hr className="mt-4 bg-gray-300 h-0.5 border-0 w-[800px] opacity-70" />
 
       <h1 className="text-white mt-4">
         © 2025 Matthew Peralta. All rights reserved.
