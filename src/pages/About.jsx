@@ -14,39 +14,29 @@ const About = () => {
     setSelectedProject(data); // store what was clicked
     showModal(true);
   };
-
-  const scrollLeft = () => {
-    const el = document.getElementById("carousel");
-    el.scrollBy({ left: -300, behavior: "smooth" });
-  };
-
-  const scrollRight = () => {
-    const el = document.getElementById("carousel");
-    el.scrollBy({ left: 300, behavior: "smooth" });
-  };
   return (
     <div className="min-h-screen flex flex-col font-sans bg-gray-100">
       <Nav />
-      <div className="flex-1 flex flex-col justify-start items-center">
-        <div className="flex flex-col justify-start mt-10">
-          <h1 className="text-5xl text-red-800 font-bold">Matthew Peralta</h1>
-          <p className="text-xl font-normal">
+      <div className="flex-1 flex flex-col justify-start items-center px-4 sm:px-6">
+        <div className="flex flex-col justify-start mt-10 w-full max-w-2xl">
+          <h1 className="text-3xl sm:text-5xl text-red-800 font-bold">
+            Matthew Peralta
+          </h1>
+          <p className="text-lg sm:text-xl font-normal">
             Passionate Problem Solver & Creative Innovator
           </p>
-          <div className="mt-12 bg-white rounded-lg shadow p-6">
+          <div className="mt-12 bg-white rounded-lg shadow p-4 sm:p-6">
             <p className="mb-2">
               <span className="text-red-800 text-2xl font-medium">"</span>Hello!
               I'm <b>Matthew Peralta...</b>
             </p>
             <p>
-              I’m a motivated Full-Stack Developer focused on the MERN stack,{" "}
-              combining strong backend logic with dynamic React-driven UI <br />
-              development. I also have solid experience in PHP and Java and{" "}
-              quickly adapt to new frameworks. I led the development of DepTrack{" "}
-              <br />
-              an online document fast-tracking system with QR integration which{" "}
-              earned Best in Capstone. I’m committed to building impactful,{" "}
-              <br />
+              I'm a motivated Full-Stack Developer focused on the MERN stack,
+              combining strong backend logic with dynamic React-driven UI
+              development. I also have solid experience in PHP and Java and
+              quickly adapt to new frameworks. I led the development of DepTrack
+              an online document fast-tracking system with QR integration which
+              earned Best in Capstone. I'm committed to building impactful,
               efficient systems and contributing to innovative development
               teams.
             </p>
@@ -56,7 +46,7 @@ const About = () => {
 
           <div className="mt-6 flex flex-col items-start justify-center">
             <h1 className="text-red-800 font-medium text-lg">Projects</h1>
-            <div className="flex justify-between items-center space-x-6">
+            <div className="flex flex-wrap gap-4 sm:gap-6">
               <Card
                 image={SdoLogo}
                 desc={"Document Tracking System for SDO Baliwag, Bulacan"}
@@ -84,7 +74,7 @@ const About = () => {
           <Modal modal={modal} onClose={() => showModal(false)}>
             {selectedProject && (
               <div className="flex flex-col justify-center items-center">
-                <div className="flex flex-col justify-center items-center w-150">
+                <div className="flex flex-col justify-center items-center w-full max-w-[600px]">
                   <img
                     src={selectedProject.image}
                     alt=""
@@ -96,7 +86,7 @@ const About = () => {
                   <p className="text-center">{selectedProject.desc}</p>
                 </div>
 
-                <div className="flex mt-4  space-x-1">
+                <div className="flex flex-wrap justify-center gap-1 mt-4">
                   <div className="px-4 bg-orange-100 text-orange-600 font-bold border border-orange-600 rounded-full">
                     HTML
                   </div>
@@ -112,7 +102,7 @@ const About = () => {
                   <div className="px-4 bg-yellow-100 text-yellow-600 font-bold border border-yellow-600 rounded-full">
                     JS
                   </div>
-                  <div className="px-4 bg-purple-100 text-purple-600 font-bold border borderpurple-600 rounded-full">
+                  <div className="px-4 bg-purple-100 text-purple-600 font-bold border border-purple-600 rounded-full">
                     PHP
                   </div>
                 </div>
@@ -129,13 +119,14 @@ const About = () => {
 
           <hr className="mt-12 bg-red-400 h-0.5 border-0" />
 
-          <div className="mt-6">
+          <div className="mt-6 mb-6">
             <h1 className="text-red-800 font-medium text-lg">Certifications</h1>
             <ul className="list-disc ml-8 text-red-400">
               <li>Introduction to Packet Tracer (2024) </li>
               <li>Introduction to C++ (2023)</li>
               <li>
-                Computer Networking – Local Area Networks and OSI Model (2025){" "}
+                Computer Networking – Local Area Networks and OSI Model
+                (2025){" "}
               </li>
             </ul>
           </div>

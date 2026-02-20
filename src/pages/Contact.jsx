@@ -19,7 +19,7 @@ const Contact = () => {
         "service_6e7nzcl",
         "template_hcvf8uk",
         form.current,
-        "D6AbhslPhWLgucbGy"
+        "D6AbhslPhWLgucbGy",
       )
       .then(
         () => {
@@ -30,20 +30,22 @@ const Contact = () => {
         (error) => {
           alert("Failed to send message: " + error.text);
           setSending(false);
-        }
+        },
       );
   };
   return (
     <div className="min-h-screen flex flex-col font-sans bg-gray-100">
       <Nav />
-      <div className="flex-1 flex flex-col justify-center items-center">
-        <div className="flex flex-col space-y-4 mt-10">
-          <h1 className="text-5xl text-red-800 font-bold">Contact</h1>
-          <p className="text-lg text-gray-500">
+      <div className="flex-1 flex flex-col justify-center items-center px-4 sm:px-6">
+        <div className="flex flex-col space-y-4 mt-10 w-full max-w-lg">
+          <h1 className="text-3xl sm:text-5xl text-red-800 font-bold">
+            Contact
+          </h1>
+          <p className="text-base sm:text-lg text-gray-500">
             Get in touch with me, I'd love to hear from you!
           </p>
 
-          <div className="mt-4 flex flex-col justify-center bg-white shadow-xl py-6 px-8 rounded-lg">
+          <div className="mt-4 flex flex-col justify-center bg-white shadow-xl py-6 px-4 sm:px-8 rounded-lg">
             <h1 className="text-xl text-red-800 font-bold mb-4">
               Contact Information
             </h1>
@@ -60,7 +62,7 @@ const Contact = () => {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="bg-white shadow-xl p-6 rounded-lg space-y-4 mt-6"
+              className="bg-white shadow-xl p-4 sm:p-6 rounded-lg space-y-4 mt-6"
             >
               <h1 className="text-xl text-red-800 font-bold mb-2">
                 Send a Message
@@ -97,7 +99,7 @@ const Contact = () => {
                   "w-full p-3 rounded-lg font-semibold transition cursor-pointer",
                   isSending
                     ? "bg-red-800 opacity-70 text-white cursor-not-allowed"
-                    : "bg-red-800 hover:bg-red-700 text-white"
+                    : "bg-red-800 hover:bg-red-700 text-white",
                 )}
               >
                 {isSending ? "Sending..." : "Send Message"}

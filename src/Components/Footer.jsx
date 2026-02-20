@@ -35,9 +35,9 @@ const Footer = () => {
         </a>
       </div>
 
-      <hr className="mt-4 bg-gray-300 h-0.5 border-0 w-[800px] opacity-70" />
+      <hr className="mt-4 bg-gray-300 h-0.5 border-0 w-full max-w-[800px] opacity-70" />
 
-      <h1 className="text-white mt-4">
+      <h1 className="text-white mt-4 text-sm sm:text-base text-center">
         © 2025 Matthew Peralta. All rights reserved.
       </h1>
     </div>
